@@ -1,8 +1,12 @@
 # helm-superseded-bug
 
-Demo of a helm bug where failed versions are marked as superseded.
+Demo of a helm bug where failed versions are marked as superseded, indicating that:
 
-Two cases are demonstrated (**WARN** scripts will deploy a CRD to whichever k8 env your kubectl is configured for):
+https://github.com/helm/helm/issues/2832
+
+is not fully fixed.
+
+**WARNING** the demo scripts will deploy resources to whichever cluster your kubectl is currently configured for, so I'd advise switching to a test environment before running them.
 
 ## Case 1
 
@@ -12,7 +16,7 @@ Run `demo_2.sh` to see this played out on your k8 cluster.
 
 ## Case 2
 
-Case where we have a sucessful deployment followed by a failure, when we try to rollback to the sucessful deployment it fails (a separate related issue, see https://github.com/helm/helm/issues/10219) even though it fails the previous release, which also failed, is marked as superseded.
+Case where we have a sucessful deployment followed by a failure, when we try to rollback to the sucessful deployment it fails (a separate related issue, see https://github.com/helm/helm/issues/10219); after the failure, the previous release, which also failed, is marked as superseded.
 
 Run `demo_2.sh` to see this played out on your k8 cluster.
 
