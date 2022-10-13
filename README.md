@@ -12,7 +12,7 @@ is not fully fixed.
 
 Case where initial installation fails, the subesequent sucessful deployment causes the inital failed version to be marked as "superseded".
 
-Run `demo_2.sh` to see this played out on your k8 cluster.
+Run `demo_1.sh` to see this played out on your k8 cluster.
 
 ## Case 2
 
