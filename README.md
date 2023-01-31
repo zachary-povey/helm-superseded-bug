@@ -22,4 +22,4 @@ Run `demo_2.sh` to see this played out on your k8 cluster.
 
 ## Cleanup
 
-The scripts don't cleanup at the end of execution to leave state for you to have a look at, run `cleanup.sh` to remove the helm deployment and delte the namespace.
+The scripts don't cleanup at the end of execution to leave state for you to have a look at, run `cleanup.sh` to remove the helm deployment and delete the namespace.
